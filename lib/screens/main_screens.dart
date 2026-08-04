@@ -18,7 +18,7 @@ class _MainScreensState extends State<MainScreens> {
     const Center(child: Text("LoginScreens")),
   ];
 
-  final List<Widget> pages = [Homescreens(), Profilescreens(), Loginscreens()];
+  final List<Widget> pages = [HomeScreens(), ProfileScreens(), LoginScreens()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
