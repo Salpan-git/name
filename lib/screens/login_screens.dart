@@ -30,14 +30,9 @@ class _LoginscreensState extends State<Loginscreens> {
 
         // Gradient Background
         decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              Color(0xFF0F172A), // dark navy
-              Color(0xFF1E3A8A), // blue
-              Color(0xFF38BDF8), // sky blue
-            ],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
+          image: DecorationImage(
+            image: AssetImage('assets/images/RB_CAT.gif'),
+            fit: BoxFit.cover,
           ),
         ),
 
@@ -89,7 +84,7 @@ class _LoginscreensState extends State<Loginscreens> {
                           ],
                         ),
                         child: const Icon(
-                          Icons.lock_rounded,
+                          Icons.pets,
                           color: Colors.white,
                           size: 46,
                         ),
@@ -250,7 +245,7 @@ class _LoginscreensState extends State<Loginscreens> {
                           debugPrint('Password: ${passwordController.text}');
                         },
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color(0xFF2563EB),
+                          backgroundColor: const Color.fromARGB(246, 37, 99, 235),
                           foregroundColor: Colors.white,
                           elevation: 0,
                           shadowColor: Colors.transparent,
@@ -310,7 +305,7 @@ class _LoginscreensState extends State<Loginscreens> {
                             child: const Icon(
                               Icons.g_mobiledata_rounded,
                               size: 30,
-                              color: Colors.redAccent,
+                              color: Colors.black,
                             ),
                           ),
                         ),
@@ -358,7 +353,7 @@ class _LoginscreensState extends State<Loginscreens> {
                             child: const Icon(
                               Icons.code_rounded,
                               size: 28,
-                              color: Color(0xFF0F172A),
+                              color: Colors.black,
                             ),
                           ),
                         ),
