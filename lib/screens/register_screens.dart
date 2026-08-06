@@ -19,17 +19,15 @@ class _RegisterscreensState extends State<Registerscreens> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+    body: Container(
         width: double.infinity,
+        height: double.infinity,
+
+        // Gradient Background
         decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              Color(0xFF0D47A1),
-              Color(0xFF1976D2),
-              Color(0xFF64B5F6),
-            ],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
+          image: DecorationImage(
+            image: AssetImage('assets/images/RB_CAT.gif'),
+            fit: BoxFit.cover,
           ),
         ),
         child: Center(
@@ -53,7 +51,7 @@ class _RegisterscreensState extends State<Registerscreens> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   const Icon(
-                    Icons.person_add_alt_1_outlined,
+                    Icons.pets,
                     size: 64,
                     color: Color(0xFF1565C0),
                   ),
@@ -242,7 +240,7 @@ class _RegisterscreensState extends State<Registerscreens> {
                       Expanded(
                         child: OutlinedButton.icon(
                           onPressed: () {},
-                          icon: const Icon(Icons.g_mobiledata, size: 24),
+                          icon: const Icon(Icons.g_mobiledata_rounded, size: 22),
                           label: const Text('Google'),
                         ),
                       ),
@@ -258,7 +256,7 @@ class _RegisterscreensState extends State<Registerscreens> {
                       Expanded(
                         child: OutlinedButton.icon(
                           onPressed: () {},
-                          icon: const Icon(Icons.code, size: 22),
+                          icon: const Icon(Icons.code, size: 22, color: Colors.black),
                           label: const Text('GitHub'),
                         ),
                       ),
