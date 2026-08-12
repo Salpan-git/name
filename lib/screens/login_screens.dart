@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'register_screens.dart';
 
-class Loginscreens extends StatefulWidget {
-  const Loginscreens({super.key});
+
+class LoginScreens extends StatefulWidget {
+  const LoginScreens({super.key});
 
   @override
-  State<Loginscreens> createState() => _LoginscreensState();
+  State<LoginScreens> createState() => _LoginScreensState();
 }
 
-class _LoginscreensState extends State<Loginscreens> {
+class _LoginScreensState extends State<LoginScreens> {
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
 
@@ -27,7 +28,6 @@ class _LoginscreensState extends State<Loginscreens> {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-
         // Gradient Background
         decoration: const BoxDecoration(
           image: DecorationImage(

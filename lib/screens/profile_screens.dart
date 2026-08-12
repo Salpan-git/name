@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../constants/app_colors.dart';
 import '../constants/app_text_styles.dart';
 
-class Profilescreens extends StatelessWidget {
-  const Profilescreens({super.key});
+class ProfileScreens extends StatelessWidget {
+  const ProfileScreens({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -99,7 +99,7 @@ class Profilescreens extends StatelessWidget {
                           trailing: const Icon(Icons.arrow_forward_ios, size: 16),
                           onTap: () {},
                         ),
-                        Divider(color: AppColors.divider.withOpacity(0.5), thickness: 1),
+                        Divider(color: const Color.fromARGB(255, 252, 252, 252).withOpacity(0.5), thickness: 1),
                         ListTile(
                           hoverColor: AppColors.accent.withOpacity(0.1),
                           leading: const Icon(Icons.notifications, color: Color.fromARGB(255, 49, 192, 21)),
@@ -127,7 +127,7 @@ class Profilescreens extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text('Preferences', 
-                  style: AppTextStyles.heading2.copyWith(color: Colors.white),),
+                  style: AppTextStyles.heading2,),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -136,9 +136,9 @@ class Profilescreens extends StatelessWidget {
                     alignment: Alignment.centerLeft,
                     decoration: BoxDecoration(
                       borderRadius: const BorderRadius.all(Radius.circular(10)),
-                      color: AppColors.surface,
+                      color: const Color.fromARGB(255, 231, 231, 231),
                       border: const Border(
-                        bottom: BorderSide(color: AppColors.border, width: 1),
+                        bottom: BorderSide(color: Color.fromARGB(255, 255, 255, 255), width: 1),
                       ),
                     ),
                     child: Column(
@@ -146,22 +146,22 @@ class Profilescreens extends StatelessWidget {
                       children: [
                         ListTile(
                           hoverColor: AppColors.accent.withOpacity(0.1),
-                          leading: const Icon(Icons.info, color: Color.fromARGB(255, 212, 73, 73)),
+                          leading: const Icon(Icons.info, color: Color.fromARGB(255, 0, 0, 0)),
                           title: Text('About Us', style: AppTextStyles.bodyMedium),
                           subtitle: Text('Learn more about our company', style: AppTextStyles.bodySmall),
                           trailing: const Icon(Icons.arrow_forward_ios, size: 16),
                           onTap: () {},
                         ),
-                        Divider(color: AppColors.divider.withOpacity(0.5), thickness: 1),
+                        Divider(color: const Color.fromARGB(255, 255, 255, 255).withOpacity(0.5), thickness: 1),
                         ListTile(
                           hoverColor: AppColors.accent.withOpacity(0.1),
-                          leading: const Icon(Icons.brush, color: Color.fromARGB(255, 212, 73, 73)),
+                          leading: const Icon(Icons.brush, color: Color.fromARGB(255, 0, 0, 0)),
                           title: Text('Theme Settings', style: AppTextStyles.bodyMedium),
                           subtitle: Text('Manage your theme preferences', style: AppTextStyles.bodySmall),
                           trailing: const Icon(Icons.arrow_forward_ios, size: 16),
                           onTap: () {},
                         ),
-                        Divider(color: AppColors.divider.withOpacity(0.5), thickness: 1),
+                        Divider(color: const Color.fromARGB(255, 255, 255, 255).withOpacity(0.5), thickness: 1),
                         ItemMenuSetting(
                           icon: Icons.calendar_today,
                           title: 'Appointment Settings',

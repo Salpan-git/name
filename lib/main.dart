@@ -5,6 +5,7 @@ import 'screens/profile_screens.dart';
 import 'screens/login_screens.dart';
 import 'screens/register_screens.dart';
 import 'screens/login_app.dart';
+import 'screens/main_screens.dart';
 
 void main() {
   runApp(const MyApp());
@@ -45,13 +46,14 @@ class MyApp extends StatelessWidget {
       // First screen
       // home: const HomePage(),
 
-      initialRoute: '/login',
+      initialRoute: '/home',
       // initialRoute: '/',
 
       routes: {
-       '/home': (context) => const Homescreens(),
-        '/profile': (context) => const Profilescreens(),
-        '/login': (context) => const Loginscreens(),
+        '/main': (context) => const MainScreens(),
+       '/home': (context) => const HomeScreens(),
+        '/profile': (context) => const ProfileScreens(),
+        '/login': (context) => const LoginScreens(),
         '/register': (context) => const Registerscreens(),
         '/loginapp': (context) => const LoginApp(),
       },
