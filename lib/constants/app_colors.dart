@@ -18,9 +18,9 @@ class AppColors {
   static const Color card = Color.fromARGB(255, 255, 255, 255);
 
   // Text Colors
-  static const Color textPrimary = Color.fromARGB(255, 33, 33, 33);
-  static const Color textSecondary = Color.fromARGB(255, 117, 117, 117);
-  static const Color textLight = Color.fromARGB(255, 255, 255, 255);
+  static const Color textPrimary = Color.fromARGB(255, 0, 0, 0);
+  static const Color textSecondary = Color.fromARGB(255, 0, 0, 0);
+  static const Color textLight = Color.fromARGB(255, 0, 0, 0);
 
   // Status Colors
   static const Color success = Color.fromARGB(255, 67, 160, 71);

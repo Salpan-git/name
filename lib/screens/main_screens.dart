@@ -18,18 +18,17 @@ class _MainScreensState extends State<MainScreens> {
     const Center(child: Text("LoginScreens")),
   ];
 
-  final List<Widget> pages = [HomeScreens(), ProfileScreens(), LoginScreens()];
+  final List<Widget> pages = [HomeScreens(),ProfileScreens(),LoginScreens()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Hello")),
       body: pages[currentIndex],
 
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentIndex,
-        onTap: (Index) {
+        onTap: (index) {
           setState(() {
-            currentIndex = Index;
+            currentIndex = index;
           });
         },
         selectedItemColor: Colors.black,
@@ -38,8 +37,8 @@ class _MainScreensState extends State<MainScreens> {
 
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.login), label: 'Login'),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+          BottomNavigationBarItem(icon: Icon(Icons.login_rounded), label: 'Login'),
         ],
       ),
     );
